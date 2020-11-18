@@ -15,7 +15,7 @@ public class ParityCheck {
 
     public static short getParityBrainKerringam(int number) {
         short noOfBits = 0;
-        while(number != 0) {
+        while(number > 0) {
             noOfBits ^= 1;
             number &= (number - 1);
         }

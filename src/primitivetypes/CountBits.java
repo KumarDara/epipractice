@@ -16,7 +16,7 @@ public class CountBits {
 
     public static short getBitsCountBrainKerringam(int number) {
         short noOfBits = 0;
-        while(number != 0) {
+        while(number > 0) {
             noOfBits++;
             number &= (number - 1);
         }
